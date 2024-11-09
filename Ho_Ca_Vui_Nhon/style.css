@@ -1,0 +1,76 @@
+body{
+    background-image: url("images/anhho.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#shark{
+    position: absolute;
+    animation-name: camap;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    bottom: 0;
+    left: 30%;
+    top: 0;
+}
+@keyframes camap
+{
+    0% { left: 0px; transform: scaleX(1); }
+  49% { left: 700px; transform: scaleX(1); }
+  50% { left: 900px;top:50px; transform: scaleX(-1); }
+  100% { left: 0px; transform: scaleX(-1); }
+}
+#goldfish{
+    position: absolute;
+    animation-name: cavang;
+    animation-duration: 15s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    top: 200px;
+    left: 300px;
+}
+@keyframes cavang
+{
+    0% { left: 0px; transform: scaleX(1); }
+  49% { left: 700px; transform: scaleX(1); }
+  50% { left: 880px;top:0px;transform: scaleX(-1); }
+  100% { left: 0px; transform: scaleX(-1); }
+}
+#tholan{
+    position: absolute;
+    animation-name: nguoilan;
+    animation-duration: 20s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    left: 10%;
+    top: 300px;
+}
+@keyframes nguoilan
+{
+    0% { left: 0px; transform: scaleX(1); }
+  49% { left: 600px; transform: scaleX(1); }
+  50% { left: 880px;top:50px; transform: scaleX(-1); }
+  100% { left: 0px; transform: scaleX(-1); }
+}
+#turtle{
+    position: absolute;
+    animation-name: ruabien;
+    animation-duration: 60s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    left:20px;
+    top: 100px;
+    
+}
+@keyframes ruabien
+{
+    0% { left: 0px; transform: scaleX(1); }
+  49% { left: 500px; transform: scaleX(1); }
+  50% { left: 800px;top:20px; transform: scaleX(-1); }
+  100% { left: 0px; transform: scaleX(-1); }
+}
