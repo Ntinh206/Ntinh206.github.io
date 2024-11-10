@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif; /*kiểu chữ */  
-    margin:0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    margin:0; /*khoảng cách xung quanh */
+    background-repeat: no-repeat; /*không lặp lại nền ảnh */
+    background-attachment: fixed; /*cố định hình nền ,không cuộn theo nội dung */
+    background-size: cover; /*kích thước hình ảnh */
+    background-position: center; /*vị trí ảnh */
     background-image: url("nencanhan.png");
     padding: 0;
 
 }
 
 .container {
-    max-width: 900px;
+    max-width: 900px; /*độ rộng tối đa */
     margin: 0 auto; /*căn giữa phần tử*/
 }
 
@@ -19,7 +19,7 @@ body {
  text-align: center;/*dòng ở vị trí trung tâm*/
  margin-bottom: 10px;
 }
-h1, h2{
+h1{
     color:#2258bd;
 }
 .lienhe, .skills, .hocvan {
@@ -30,6 +30,26 @@ ul {
     padding: 0; /*lề */
 }
 li{
-    margin-bottom: 10px; /* k.cách từ dòng đầu tiên vs dòng dưới */
-    margin-left: 5px;
+    font-weight: bold;
+    margin-bottom: 20px; /* k.cách từ dòng đầu tiên vs dòng dưới */
+    margin-left: 5px; /* k.cách từ dòng đầu tiên vs dòng bên trái */
 }
+h2{
+    color:#2258bd;
+    border-bottom:20px  #2258bd; /* gạch dưới */
+}
+.skill-bar {
+    position: relative;
+    height: 25px;
+    background-color:white;
+    border-radius: 15px; /*bo góc*/
+    overflow: hidden;/* nd vượt quá kích thước sẽ bị ẩn */
+}
+.skill-bar-fill{
+    height: 100%;
+    background-color: #2258bd;
+    width: 0;
+    border-radius: 15px;
+    transition: width 0.5s ease; /*chuyển động theo độ rộng */
+}
+/*màu của skill-bar và màu của skill-bar-fill phải khác nhau */
