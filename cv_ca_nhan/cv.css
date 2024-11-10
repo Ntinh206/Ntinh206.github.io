@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif; /*kiểu chữ */  
+    margin:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url("nencanhan.png");
+    padding: 0;
+
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto; /*căn giữa phần tử*/
+}
+
+.thongtin{
+ text-align: center;/*dòng ở vị trí trung tâm*/
+ margin-bottom: 10px;
+}
+h1, h2{
+    color:#2258bd;
+}
+.lienhe, .skills, .hocvan {
+    margin-bottom: 15px;
+}
+ul {
+    list-style: circle; /*mục danh sách hình tròn*/
+    padding: 0; /*lề */
+}
+li{
+    margin-bottom: 10px; /* k.cách từ dòng đầu tiên vs dòng dưới */
+    margin-left: 5px;
+}
