@@ -1,0 +1,93 @@
+*{
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out ;
+    user-select: none;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(anh.jpg);
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* % chiều rộng khung*/
+    text-align: center;
+    padding-top: 5vh; /* % chiều cao khung*/
+}
+.turn-container{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;/*định nghĩa kích thước các hàng*/
+    grid-template-columns: 1fr 1fr;/*định nghĩa kích thước các cột*/
+    /*fr:fraction: chia sẽ không gian cho 1 phần tử*/
+    position: relative;
+    border-radius: 10px;
+}
+
+.turn-container h3{
+    grid-column-start:1 ;/*vị trí bắt đầu của pt trên lưới */
+    grid-column-end:3 ;/*vị trí kết thúc của pt trên lưới */
+}
+.turn-container .turn-box{
+    border: 5px solid black;
+    font-size: 2rem ;/*1 rem tương đương 16px*/
+    font-weight: 700px;
+}
+.turn-container .turn-box:nth-child(even){
+    border-right: none;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    z-index: -1;
+}
+
+.bancocaro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border: 4px solid black;
+}
+.box{
+    border: 3px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 800px;
+}
+.box:hover{
+    background-color:lightskyblue;
+}
+#Choilai{
+    background-color: red;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+#Choilai:hover{
+    padding: 15px 30px;
+    background-color: rgb(28, 164, 218);
+    color: black;
+
+}
+
+
+ 
