@@ -10,7 +10,7 @@
     align-items: center;
 }
 body{
-    background-image: url("ád.jpg");
+    background-image: url("anhthiennhien.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -39,8 +39,8 @@ body{
 }
 .turn-container .turn-box{
     border: 5px solid black;
-    font-size: 32px ;
-    font-weight: 700px;
+    font-size: 2rem ;
+    font-weight: 650px;
 }
 .turn-container .turn-box:nth-child(even){
     border-right: none;
