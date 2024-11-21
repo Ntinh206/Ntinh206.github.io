@@ -12,9 +12,8 @@
 body{
     background-image: url("anhthiennhien.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     width: 100vw; /* % chiều rộng khung*/
@@ -40,7 +39,7 @@ body{
 .turn-container .turn-box{
     border: 5px solid black;
     font-size: 2rem ;
-    font-weight: 650px;
+    font-weight: 70px;
 }
 .turn-container .turn-box:nth-child(even){
     border-right: none;
